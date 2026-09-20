@@ -1,14 +1,40 @@
 -- loader execution code: loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LoaderEXHUB"))()
+
 if game.GameId == 8976165158 then
     print("Hi im EXHUB GameId '8976165158' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
-elseif game.GameId == 2440500124 then
+
+elseif game.GameId == 0 then
     print("Hi im EXHUB GameId '2440500124' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/DOORSEXHUB"))()
+
 elseif game.GameId == 0 then
     print("Hi im EXHUB GameId '0' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/TheStorageEXHUB"))()
+
 else
-    print("Hi im EXHUB Sorry, It looks like this game isn't Supported, you can reccommend games by commenting under the scripts or if this game is usually working try executing again or reporting it to me by commenting under the script.")
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/UniversalEXHUB"))() 
+    print([[
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                 EXHUB
+              GAME NOT SUPPORTED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Sorry! It looks like this game isn't currently
+supported by EXHUB.
+
+• Recommend this game:
+  Comment under the EXHUB scripts with the game
+  you'd like to see supported.
+
+• Think this is a mistake?
+  Try executing EXHUB again.
+
+• Still not working?
+  Please report the issue by commenting under
+  the scripts so I can look into it.
+
+Thank you for using EXHUB!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+]])
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/UniversalEXHUB"))() 
 end
