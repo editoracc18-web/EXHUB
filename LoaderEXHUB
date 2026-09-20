@@ -1,3 +1,3 @@
-if game.PlaceId == "118782593215069" then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
+if game.PlaceId == 118782593215069 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
 end
