@@ -1,7 +1,7 @@
 if game.GameId == 8976165158 then
     print("Hi im EXHUB GameId '8976165158' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
-elseif game.GameId == 2440500124 then
+elseif game.GameId == 0 then
     print("Hi im EXHUB GameId '2440500124' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/DOORSEXHUB"))()
 elseif game.GameId == 0 then
