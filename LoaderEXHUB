@@ -8,8 +8,8 @@ elseif game.GameId == 2440500124 then
     print("Hi im EXHUB GameId '2440500124' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/DOORSEXHUB"))()
 
-elseif game.GameId == 0 then
-    print("Hi im EXHUB GameId '0' Found!")
+elseif game.GameId == 4756005135 then
+    print("Hi im EXHUB GameId '4756005135' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/TheStorageEXHUB"))()
 
 else
