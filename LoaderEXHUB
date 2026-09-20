@@ -2,9 +2,12 @@ if game.GameId == 8976165158 then
     print("Hi im EXHUB GameId '8976165158' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
 elseif game.GameId == 0 then
+    print("Hi im EXHUB GameId '0' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/DOORSEXHUB"))()
 elseif game.GameId == 0 then
+    print("Hi im EXHUB GameId '0' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/TheStorageEXHUB"))()
 else
+    print("Hi im EXHUB Sorry, It looks like this game isn't Supported, you can reccommend games by commenting under the scripts or if this game is usually working try executing again or reporting it to me by commenting under the script.")
    loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/UniversalEXHUB"))() 
 end
