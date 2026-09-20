@@ -1,5 +1,5 @@
 if game.PlaceId == 118782593215069 then
-    print("PlaceId '118782593215069' Found!")
+    print("Hi im EXHUB PlaceId '118782593215069' Found!")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/LocustMM2EXHUB"))()
 else
    loadstring(game:HttpGet("https://raw.githubusercontent.com/editoracc18-web/EXHUB/refs/heads/main/UniversalEXHUB"))() 
