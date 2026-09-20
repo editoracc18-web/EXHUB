@@ -1,0 +1,2 @@
+warn("Not Mine! Game not supported, activating Infinite Yield.")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
