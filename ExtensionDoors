@@ -27,16 +27,16 @@ local f1, f2, v1, v2, v3, espLibrary, save, load, options, toggles, v4, v5, v6, 
   v20, v21, getMoveVector, v22, a90, v23, f7, customPhysicalProperties, v24, v25, f8, fogEnd,
   screech, v26, surgeRemote, v27, v28, f9, f10, v29, v30, v31, v32, v33, v34, v35, f11
 
-if localPlayer:GetAttribute(" meLoaded") then
+if localPlayer:GetAttribute("me Loaded") then
   if getgenv().Library then
-    getgenv().Library:Notify(" me doors 『 Already Loaded 』", 4)
+    getgenv().Library:Notify("me  doors 『 Already Loaded 』", 4)
   else
-    print(" me doors 『 Already Loaded 』")
+    print("me  doors 『 Already Loaded 』")
   end
 
   return
 else
-  localPlayer:SetAttribute(" meLoaded", true)
+  localPlayer:SetAttribute("me Loaded", true)
 
   while true do
     task.wait()
@@ -96,7 +96,7 @@ else
       if v2.KeybindFrame then
         local position = v2.KeybindFrame.Position
         v38 = { position.X.Scale, position.X.Offset, position.Y.Scale, position.Y.Offset }
-        getgenv(). meDoors_KeybindPos = v38
+        getgenv().me Doors_KeybindPos = v38
 
         pcall(function()
           if writefile and p1.Folder then
@@ -126,7 +126,7 @@ else
               jsonDecode[1], jsonDecode[2], jsonDecode[3], jsonDecode[4]
             )
 
-            getgenv(). meDoors_KeybindPos = jsonDecode
+            getgenv().me Doors_KeybindPos = jsonDecode
           end
         end
       end)
@@ -140,7 +140,7 @@ else
   v4 = {}
 
   local window = v2:CreateWindow({
-    Title = " me doors",
+    Title = "me  doors",
     Center = true,
     ToggleKeybind = Enum.KeyCode.RightControl,
     AutoShow = true,
@@ -149,12 +149,12 @@ else
   })
 
   if v2.KeybindFrame then
-    if getgenv(). meDoors_KeybindPos then
-      local  meDoorsKeybindPos = getgenv(). meDoors_KeybindPos
+    if getgenv().me Doors_KeybindPos then
+      local me DoorsKeybindPos = getgenv().me Doors_KeybindPos
 
       v2.KeybindFrame.Position = UDim2.new(
-         meDoorsKeybindPos[1],  meDoorsKeybindPos[2],  meDoorsKeybindPos[3],
-         meDoorsKeybindPos[4]
+        me DoorsKeybindPos[1], me DoorsKeybindPos[2], me DoorsKeybindPos[3],
+        me DoorsKeybindPos[4]
       )
     end
 
@@ -163,7 +163,7 @@ else
     table.insert(v4, position2:Connect(function()
       local position3 = v2.KeybindFrame.Position
 
-      getgenv(). meDoors_KeybindPos = {
+      getgenv().me Doors_KeybindPos = {
         position3.X.Scale, position3.X.Offset, position3.Y.Scale, position3.Y.Offset,
       }
     end))
@@ -721,7 +721,7 @@ else
     f12(v54.Info)
 
     local teleport = v54.Main:AddLeftGroupbox("Teleport")
-    teleport:AddLabel("Main menu appears after teleport", true)
+    teleport:AddLabel("Mainme nu appears after teleport", true)
 
     function f11(destination, p16)
       local createElevator = replicatedStorage:FindFirstChild("RemotesFolder")
@@ -835,12 +835,12 @@ else
     hubUtilities:AddButton({
       Text = "Unload Hub",
       Func = function()
-        localPlayer:SetAttribute(" meLoaded", nil)
+        localPlayer:SetAttribute("me Loaded", nil)
 
         if v2.KeybindFrame then
           local position4 = v2.KeybindFrame.Position
 
-          getgenv(). meDoors_KeybindPos = {
+          getgenv().me Doors_KeybindPos = {
             position4.X.Scale, position4.X.Offset, position4.Y.Scale, position4.Y.Offset,
           }
         end
@@ -855,14 +855,14 @@ else
 
     if v37 then
       v37:SetLibrary(v2)
-      v37:SetFolder(" meDoors")
+      v37:SetFolder("me Doors")
     end
 
     if v3 then
       v3:SetLibrary(v2)
       v3:IgnoreThemeSettings()
       v3:SetIgnoreIndexes({ "MenuKeybind" })
-      v3:SetFolder(" meDoors/Config")
+      v3:SetFolder("me Doors/Config")
       v3:BuildConfigSection(v54.Settings)
     end
 
@@ -870,7 +870,7 @@ else
       v37:ApplyToTab(v54.Settings)
     end
 
-    f1(" me doors loaded | Lobby", 4)
+    f1("me  doors loaded | Lobby", 4)
   else
     function f6(p17)
       return ((localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
@@ -4752,7 +4752,7 @@ end)
     bypass:AddDropdown("AntiCheatManiMethod", {
       Values = { "Velocity", "Anticheat" },
       Default = 1,
-      Text = "Manipulation Method",
+      Text = "Manipulationme thod",
       Callback = function(value176) end,
     })
 
@@ -6216,7 +6216,7 @@ end)
       hubUtilities2:AddButton({
         Text = "Unload Hub",
         Func = function()
-          localPlayer:SetAttribute(" meLoaded", nil)
+          localPlayer:SetAttribute("me Loaded", nil)
           AlmaEnabled = false
           DronesEnabled = false
           BashEnabled = false
@@ -6431,7 +6431,7 @@ end)
           if v2.KeybindFrame then
             local position6 = v2.KeybindFrame.Position
 
-            getgenv(). meDoors_KeybindPos = {
+            getgenv().me Doors_KeybindPos = {
               position6.X.Scale, position6.X.Offset, position6.Y.Scale, position6.Y.Offset,
             }
           end
@@ -6462,14 +6462,14 @@ end)
 
     if v37 then
       v37:SetLibrary(v2)
-      v37:SetFolder(" meDoors")
+      v37:SetFolder("me Doors")
     end
 
     if v3 then
       v3:SetLibrary(v2)
       v3:IgnoreThemeSettings()
       v3:SetIgnoreIndexes({ "MenuKeybind" })
-      v3:SetFolder(" meDoors/Config")
+      v3:SetFolder("me Doors/Config")
       v3:BuildConfigSection(v17.Settings)
     end
 
@@ -6477,7 +6477,7 @@ end)
       v37:ApplyToTab(v17.Settings)
     end
 
-    f1(" me doors loaded | In-Game", 4)
+    f1("me  doors loaded | In-Game", 4)
   end
 
   return
